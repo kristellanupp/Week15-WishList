@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Wishlist</h1>
+
+        <form action="/wish" method="POST" class="new-wish">
+            <input type="text" name="userWish" placeholder="add your wish" autocomplete="off">
+            <button type="submit">Add a wish</button>
+        </form>
+
+        <div class="wishlist">
+            <ul>
+                <% for(let i = 0; i < myWishes.length; i++) { %>
+                    <li>
+                        <span><%= myWishes[i].description %></span>
+                        <form action="/remove" method="POST" style="display: inline;">
+                            <input type="hidden" name="index" value="<%= i %>">
+                            <button type="submit" class="remove-button">Remove</button>
+                        </form>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffe6f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form.new-wish {
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    border: 2px solid #e91e63;
+    border-radius: 4px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e91e63;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+form button:hover {
+    background-color: #d81b60;
+}
+
+.wishlist {
+    background: #ffe6f2;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wishlist li {
+    padding: 10px;
+    border-bottom: 1px solid #f8bbd0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wishlist li:last-child {
+    border-bottom: none;
+}
+
+.wishlist li:hover {
+    background: #f8bbd0;
+}
+
+.remove-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ff4081;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #f50057;
+}
